@@ -1,8 +1,5 @@
 const solution = (str) => {
-  const arr = str
-    .split(" ")
-    .map((str) => Number(str))
-    .sort((a, b) => a - b);
+  const arr = str.split(" ");
 
-  return `${arr[0]} ${arr[arr.length - 1]}`;
+  return `${Math.min(...arr)} ${Math.max(...arr)}`;
 };
